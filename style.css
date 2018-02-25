@@ -1,343 +1,117 @@
 html {
-    background: rgb(58, 58, 58);
-background: -moz-linear-gradient(top, rgba(155,155,155,1) 0%, rgba(58,58,58,1) 100%);
-background: -webkit-linear-gradient(top, rgba(155,155,155,1) 0%,rgba(58,58,58,1) 100%);
-background: linear-gradient(to bottom, rgba(155,155,155,1) 0%,rgba(58,58,58,1) 100%);
-background-repeat: no-repeat;
+    background: linear-gradient(-130deg, #6b6bff, #89dbff);
 }
 
-body {
-    margin: 0 auto;
-    width: 100%;
-    font-family: calibri, helvetica, arial;
-    height: 200%;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-/* HEADER */
-
-header {
-    height: 60px;
-    width: 100%;
-    padding-top: 20px;
-    background-color: background: -moz-linear-gradient(-45deg, #6db3f2 0%, #54a3ee 27%, #3690f0 66%, #1e69de 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #6db3f2 0%,#54a3ee 27%,#3690f0 66%,#1e69de 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #6db3f2 0%,#54a3ee 27%,#3690f0 66%,#1e69de 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    z-index: 0;
-}
-
-ul {
-    padding: 0;
-    text-align: center;
-    width: 100%;
-}
-
-.mid {
-    min-height: 500px;
-}
-
-li {
-    display: inline;
-    margin: 0px;
-    padding: 3%;
-    font-size: 160%;
-    z-index: 2;
-    width: 18%;
-}
-
-#title {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-#title:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.headerLi:hover {
-  color: #0a174b;
-  transition: .6s;
-}
-
-.headerLi a :hover {
-    transform: scale(1.1);
-    transition: .3s;
-}
-
-.right {
-    width: 70%;
-    float:right;
-}
-
-.right ul {
-    margin: 0px;
-    float:right;
-    padding-right: 0px;
-    padding-top: .5%;
+#hexa {
+    position: fixed;
 }
 
 #logo {
-    margin-left: 2%;
-    float: left;
-    text-align: center;
-    font-size: 36px;
-    color:white;
-    width: 20%;
+    z-index: 11;
+        
+    height: 200px;
+    width: 200px;
+    
+    position: fixed;
+    
+    top: 37%;
+    left: 44.5%;
 }
 
-#logo p {
-  z-index: 2;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-/* MAIN */
-
-#main {
-    padding-top: 0px;
-    height: 250px;
-    width: 80%;
-    padding-left: 10%;
-}
-
-#logoimg {
-    z-index: 2;
-    float: left;
-    margin-top: .3%;
-    margin-left: .7%;
+.hexagonTile {
+    height: 350px;
+    width: 350px;
+    
+    margin: 0px;
     padding: 0px;
 }
 
-.cf {
-    /**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf:before,
-.cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+#TileCenter {
+    z-index: 10;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 40%;
 }
 
-.cf:after {
-    clear: both;
+#TileCenter:hover {
+    transition-duration: 0s;
+    -webkit-transform: scale(1);
 }
 
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
-}
-
-#main p {
-    font-family: Futura, Calibri, Helvetica, Arial;
-    padding: 50px;
-    color: white;
-    text-align: center;
-    font-size: 500%;
+#Tile1 {
+    z-index: 7;
+    
+    position: fixed;
+    
+    top: 3%;
+    left: 31%;
 }
 
-.box {
-    width: 46%;
-    padding-left: 3.333333%;
-    padding-top: 75px;
-    float: center;
-    margin: 0px 0;
-    text-align: center;
-    padding-bottom: 45px;
-    transition: 0.3s;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    -webkit-transition-duration: 0.3s;
+#Tile2 {
+    z-index: 6;
+    
+    position: fixed;
+    
+    top: 3%;
+    left: 49%;
+}
+
+#Tile3 {
+    z-index: 5;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 58%;
+
+}
+
+#Tile4 {
+    z-index: 4;
+    
+    position: fixed;
+    
+    top: 57.5%;
+    left: 31%;
+}
+
+#Tile5 {
+    z-index: 3;
+    
+    position: fixed;
+    
+    top: 57.5%;
+    left: 49%;
+}
+
+#Tile6 {
+    z-index: 2;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 22%;
+}
+
+#assembly {
+    position: fixed;
+}
+
+.hexagonTile:hover {
     transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-}
-
-.box:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#images {
-  width: 80%;
-  display: block;
-  margin: 0px auto;
-}
-
-#images p {
-  margin-top: 5px;
-  font-size: 140%;
-  font-style: oblique;
-  color: #b4b4b4;
-  z-index: 2;
-}
-
-footer {
-    margin-top: 330px;
-    font-family: Calibri, Helvetica, Arial;
-    font-size: 28px;
-    margin-left: 0px;
-    text-align: center;
-    padding-top: 10px;
-    min-height: 75px;
-}
-
-footer a {
-    margin-top: 75px;
-    color: #d6d6d6;
-}
-
-footer p {
-  margin-top: 75px;
+    -webkit-transform: scale(1.1);
 }
 
 #version {
-    color: #a0a0a0;
-    font-size: 10px;
-    height: 20px;
-}
-
-.mobile {
-    display: none;
-}
-
-/* Class Name and Track */
-
-.Class {
-    color: #484848;
-    font-family: Calibri, Helvetica, Arial;
-    font-size: 25px;
-    margin: 0px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/*    Buttons!    */
-
-button {
-    font-family: calibri, helvetica, arial;
+    position: fixed;
     
-    text-align: center;
-    font-size: 300%;
+    top: 96%;
+    
+    left: 97.5%;
+    
+    font-family:sans-serif;
+    
     color: white;
-    overflow: hidden;
-    background-color: background: -moz-linear-gradient(-45deg, #6db3f2 0%, #54a3ee 27%, #3690f0 66%, #1e69de 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #6db3f2 0%,#54a3ee 27%,#3690f0 66%,#1e69de 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #6db3f2 0%,#54a3ee 27%,#3690f0 66%,#1e69de 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 1px;
-    padding-right: 25px;
-    margin: 25px;
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px transparent;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-}
-
-button:hover {
-    background-color: #00a7ff;
-    transition-duration: 0.3s;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.OnePerLine {
-    width: 96%;
-}
-
-.TwoPerLine {
-    width: 46%;
-}
-
-.FourPerLine {
-    padding: 4% 6%;
-    width: 20%;
-}
-
-/*  Gemara  */
-
-/*  Navi  */
-
-/*  Science  */
-
-/*  Quizlets  */
-
-#UpcomingText {
-}
-
-#UpcomingMid {
-    min-height: 400px;
-}
-
-.midText {
-    text-align: center;
-    width: 100%;
-}
-
-#Quiz1 {
-    font-size: 500%;
-}
-
-#Quiz2 {
-    font-size: 215%;
-}
-
-#Quiz3 {
-    font-size: 205%;
-}
-
-/*  7th Grade */
-
-/* 7th Grade History */
-
-/* 7th Grade Science */
-
-/* 7th Grade Gemara */
-
-/* 7th Grade Chumash*/
-
-/* Next Test*/
-
-#NextTest1 {
-    margin-top: 70px;
-}
-
-/*  Disclaimer  */
-
-#DiscMid {
-    color: darkblue;
-    font-size: 50px;
-    text-align: center;
 }
