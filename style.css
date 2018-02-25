@@ -1,7 +1,10 @@
 html {
-    background: linear-gradient(-130deg, #6b6bff, #89dbff);
+    background: -webkit-linear-gradient(top, rgba(107,227,255,1) 0%,rgba(44,18,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-70deg, rgba(107,227,255,1) 0%,rgb(63, 63, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    height:950px;
 }
-
+    
 #hexa {
     position: fixed;
 }
