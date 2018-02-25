@@ -6,24 +6,15 @@ html {
     position: fixed;
 }
 
-#logo {
-    z-index: 11;
-        
-    height: 200px;
-    width: 200px;
-    
-    position: fixed;
-    
-    top: 37%;
-    left: 44.5%;
-}
-
 .hexagonTile {
     height: 350px;
     width: 350px;
     
     margin: 0px;
     padding: 0px;
+    
+    transition-duration: 0.15s;
+    -webkit-transform: scale(1);
 }
 
 #TileCenter {
@@ -33,11 +24,6 @@ html {
     
     top: 30%;
     left: 40%;
-}
-
-#TileCenter:hover {
-    transition-duration: 0s;
-    -webkit-transform: scale(1);
 }
 
 #Tile1 {
@@ -74,7 +60,7 @@ html {
     position: fixed;
     
     top: 57.5%;
-    left: 31%;
+    left: 49%;
 }
 
 #Tile5 {
@@ -83,7 +69,7 @@ html {
     position: fixed;
     
     top: 57.5%;
-    left: 49%;
+    left: 31%;
 }
 
 #Tile6 {
@@ -100,7 +86,7 @@ html {
 }
 
 .hexagonTile:hover {
-    transition-duration: 0.3s;
+    transition-duration: 0.15s;
     -webkit-transform: scale(1.1);
 }
 
