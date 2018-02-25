@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dylan's Notes 2</title>
+        <meta charset="utf-8">
+        <meta name=”description” content=”A nice place to stay.”>
+
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 1101px)" href="style.css">
+
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 1100px)" href="mobile.css">
+        
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+
+        <script src="js/html5shiv.js"></script>
+
+    </head>
+
+    <body>
+        <img class="desktop" src="favicon.ico" width="64" height="64" id="logoimg">
+        <header>
+
+            <div id="logo">
+                <a href="index.html">
+                    <p id="title" >Dylan Notes 2</p>
+                </a>
+            </div>
+
+            <div class="right">
+                
+                 
+                <ul class="desktop">
+                    <li><a class="headerLi" href="index.html">Home</a></li>
+                    <li><a class="headerLi" href="Current/Science.html">Science</a></li>
+                    <li><a class="headerLi" href="Quizlets.html">Quizlets</a></li>
+                    <li><a class="headerLi" href="Current/Talmud.html">Talmud</a></li>
+                    <li><a class="headerLi" href="Current/Nach.html">Nach</a></li>
+                    <li><a class="headerLi" href="Current/History.html">History</a></li>
+                    <li><a class="headerLi" href="Current/Chumash.html">Chumash</a></li>
+                </ul>
+                
+                <div class="mobile">
+                    
+                    <div id="myNav" class="overlay">
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <div class="overlay-content">
+                        <a href="index.html">Home</a>
+                        <a href="Current/Science.html">Science</a>
+                        <a href="Quizlets.html">Quizlets</a>
+                        <a href="Current/Talmud.html">Talmud</a>
+                        <a href="Current/Nach.html">Nach</a>
+                        <a href="Current/History.html">History</a>
+                        <a href="Current/Chumash.html">Chumash</a>
+                </div>
+                </div>
+                    
+                    <li><a onclick="openNav()"><img id= "menuImg" src="images/Menu.png"></a></li>
+                </div>
+                
+                <script>
+                    function openNav() {
+                        document.getElementById("myNav").style.width = "100%";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("myNav").style.width = "0%";
+                    }
+                </script>
+                
+            </div>
+
+        </header>
+        
+        <div id="main">
+
+            <p>Welcome to Dylan's Notes!</p>
+
+        </div>
+
+        <div class="cf"></div>
+        <div id="images">
+            <div class="box">
+                <a class="boxImg" href="https://dylanspeiser.github.io/DylanNotesCommunity/">
+                    <img src="images/faviconCommunity.png" width="230" height="230">
+                    <p>Dylan Notes Community Edition</p>
+                </a>
+            </div>
+
+            <div class="box">
+                <a class="boxImg" href="UpcomingTests.html">
+                    <img src="images/NextTest.png">
+                    <!-- Insert Test Name Below: -->
+                    <p id=p2></p>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <a href="Disclaimer.html"><p>Disclaimer</p></a>
+            <p id="version">© 2017 Dylan Speiser</p>
+            <a href="http://corgiorgy.com"><p id="version">Muff is Life</p></a>
+            <p id="version" class="desktop">Dylan Notes Version 4.2.0</p>
+            <p id="version" class="mobile">Mobile Version 4.2.0</p>
+        </footer>
+    </body>
+</html>
