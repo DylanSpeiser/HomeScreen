@@ -12,14 +12,20 @@ window.onload = function() {
 
 function writeDate() {
     var d = new Date();
-    var hours = "";
+    var hourString = "";
     var minutes = "";
     var seconds = "";
     
-    if (d.getHours() < 10) {
-        hours = "0" + d.getHours();
-    } else {
-        hours = d.getHours();
+    if (d.getHours() == 0) {
+        hourString = "12";
+    } else if (d.getHours() > 0 && d.getHours() < 10) {
+        hourString = "0"+(d.getHours());
+    } else if (d.getHours() >= 10 && d.getHours() <= 12) {
+        hourString = d.getHours();
+    } else if (d.getHours() > 12 && d.getHours() < 23) {
+        hourString = "0" + (d.getHours() - 12);
+    } else if (d.getHours() == 23) {
+        hourString = "11";
     }
     
     if (d.getMinutes() < 10) {
@@ -34,7 +40,7 @@ function writeDate() {
         seconds = d.getSeconds();
     }
     
-    var time = hours + ":" + minutes + ":" + seconds;
+    var time = hourString + ":" + minutes + ":" + seconds;
     
     document.getElementById("DateDate").innerHTML = d.toDateString();
     document.getElementById("DateTime").innerHTML = time;
