@@ -1,0 +1,150 @@
+html {
+    background: -webkit-linear-gradient(top, rgba(5,5,5,1.00) 0%,rgba(44,18,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-70deg, rgba(0,0,0,1.00) 0%,rgb(63, 63, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    height:950px;
+    overflow: hidden;
+}
+    
+#hexa {
+    position: fixed;
+}
+
+.hexagonTile {
+    height: 350px;
+    width: 350px;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    transition-duration: 0.15s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#TileCenter {
+    z-index: 10;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 40%;
+}
+
+#Tile1 {
+    z-index: 7;
+    
+    position: fixed;
+    
+    top: 3%;
+    left: 31%;
+}
+
+#TileCenter:hover {
+    transition-duration: 0s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#Tile2 {
+    z-index: 6;
+    
+    position: fixed;
+    
+    top: 3%;
+    left: 49%;
+}
+
+#Tile3 {
+    z-index: 5;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 58%;
+
+}
+
+#Tile4 {
+    z-index: 4;
+    
+    position: fixed;
+    
+    top: 57.5%;
+    left: 49%;
+}
+
+#Tile5 {
+    z-index: 3;
+    
+    position: fixed;
+    
+    top: 57.5%;
+    left: 31%;
+}
+
+#Tile6 {
+    z-index: 2;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 22%;
+}
+
+#assembly {
+    position: fixed;
+}
+
+.hexagonTile:hover {
+    transition-duration: 0.15s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#DateDiv {
+    width: 100%;
+}
+
+.Date {
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    color: rgb(255,176,0);
+    
+  display: block;
+  margin-left: 21.3%;
+  margin-right: 21.3%;
+    width: 15%;
+}
+
+#DateHeader {
+    padding-top: 25%;
+    z-index: 999;
+    position: fixed;
+}
+
+#DateDate {
+    z-index: 999;
+    position: fixed;
+    padding-top: 27%;
+}
+
+#DateTime {
+    z-index: 999;
+    position: fixed;
+    padding-top: 29.5%;
+    
+}
+
+#version {
+    position: fixed;
+    
+    top: 96%;
+    
+    left: 97.5%;
+    
+    font-family:sans-serif;
+    
+    color: white;
+}

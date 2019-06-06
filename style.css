@@ -1,3 +1,5 @@
+@media (max-width: 1900px) {
+
 html {
     background: -webkit-linear-gradient(top, rgba(107,227,255,1) 0%,rgba(44,18,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(-70deg, rgba(107,227,255,1) 0%,rgb(63, 63, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -147,4 +149,160 @@ html {
     font-family:sans-serif;
     
     color: white;
+}
+	
+}
+
+@media (min-width: 1900px) {
+
+html {
+    background: linear-gradient(-70deg, rgba(107,227,255,1) 0%,rgb(63, 63, 255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    height:950px;
+    overflow: hidden;
+}
+    
+#hexa {
+    position: fixed;
+}
+
+.hexagonTile {
+    height: 350px;
+    width: 350px;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    transition-duration: 0.15s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#TileCenter {
+    z-index: 10;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 40%;
+}
+
+#Tile1 {
+    z-index: 7;
+    
+    position: fixed;
+    
+    top: 1%;
+    left: 32%;
+}
+
+#TileCenter:hover {
+    transition-duration: 0s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#Tile2 {
+    z-index: 6;
+    
+    position: fixed;
+    
+    top: 1%;
+    left: 48%;
+}
+
+#Tile3 {
+    z-index: 5;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 56%;
+
+}
+
+#Tile4 {
+    z-index: 4;
+    
+    position: fixed;
+    
+    top: 59%;
+    left: 48%;
+}
+
+#Tile5 {
+    z-index: 3;
+    
+    position: fixed;
+    
+    top: 59%;
+    left: 32%;
+}
+
+#Tile6 {
+    z-index: 2;
+    
+    position: fixed;
+    
+    top: 30%;
+    left: 24%;
+}
+
+#assembly {
+    position: fixed;
+}
+
+.hexagonTile:hover {
+    transition-duration: 0.15s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#DateDiv {
+    width: 100%;
+}
+
+.Date {
+    font-size: 20px;
+    font-family: monospace;
+    text-align: center;
+    color: rgb(255,176,0);
+    
+  display: block;
+  margin-left: 21.3%;
+  margin-right: 21.3%;
+    width: 12.7%;
+}
+
+#DateHeader {
+    padding-top: 22%;
+    z-index: 999;
+    position: fixed;
+}
+
+#DateDate {
+    z-index: 999;
+    position: fixed;
+    padding-top: 24%;
+}
+
+#DateTime {
+    z-index: 999;
+    position: fixed;
+    padding-top: 26%;
+    
+}
+
+#version {
+    position: fixed;
+    
+    top: 96%;
+    
+    left: 97.5%;
+    
+    font-family:sans-serif;
+    
+    color: white;
+}
+	
 }
